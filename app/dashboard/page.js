@@ -6,6 +6,7 @@ import { useApp } from "../../lib/store";
 import { STOCKS } from "../../lib/market";
 import { inr, pct, timeAgo } from "../../lib/format";
 import BottomSheet from "../../components/BottomSheet";
+import InsightsPanel from "../../components/InsightsPanel";
 import { Bolt, Plus, Shield, Info, Close, Logout } from "../../components/icons";
 
 const AVATAR_COLORS = ["#0ea5a4", "#6366f1", "#f59e0b", "#e5484d", "#8b5cf6", "#067a5b", "#0284c7", "#db2777", "#65a30d", "#d97706"];
@@ -121,9 +122,9 @@ export default function Dashboard() {
 
         {/* Tabs */}
         <div className="seg tabs">
-          {["market", "holdings", "orders"].map((t) => (
+          {["market", "holdings", "orders", "insights"].map((t) => (
             <button key={t} className={tab === t ? "on" : ""} onClick={() => setTab(t)}>
-              {t === "market" ? "Market" : t === "holdings" ? "Holdings" : "Orders"}
+              {t === "market" ? "Market" : t === "holdings" ? "Holdings" : t === "orders" ? "Orders" : "Insights"}
             </button>
           ))}
         </div>
@@ -216,6 +217,9 @@ export default function Dashboard() {
             )}
           </>
         )}
+
+        {/* Smart Money Insights — bank statement analysis & age-tuned SIPs */}
+        {tab === "insights" && <InsightsPanel />}
 
         <p className="footer-note">
           InstaInvest demo · simulated market feed, FIX routing &amp; depository links · not investment advice

@@ -233,3 +233,28 @@ h1, h2, h3, p { margin: 0; }
 .review-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .pay-log { background: #f2f5f7; border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; color: var(--ink2); }
 .pay-log .ok { color: var(--green-deep); font-weight: 700; }
+
+/* ── Smart Money Insights ─────────────────────────────────────────────── */
+.hike-banner { background: var(--green-soft); border: 1.5px solid var(--green-line); color: var(--green-deep); border-radius: 14px; padding: 12px 14px; font-size: 13.5px; }
+.hike-banner b { font-weight: 800; }
+.sal-chart { display: flex; gap: 3px; align-items: stretch; height: 70px; }
+.sal-col { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 4px; min-width: 0; }
+.sal-bar { width: 100%; border-radius: 4px 4px 2px 2px; background: #c8dbe0; transition: height 0.4s ease; }
+.sal-bar.hike { background: var(--green); }
+.sal-label { font-size: 8px; color: var(--muted); white-space: nowrap; overflow: hidden; }
+.flow-row { display: flex; align-items: center; gap: 10px; padding: 5px 0; font-size: 13px; color: var(--ink2); }
+.flow-row span:first-child { width: 58px; flex: none; }
+.flow-track { flex: 1; height: 8px; border-radius: 99px; background: #eef2f5; overflow: hidden; }
+.flow-fill { height: 100%; border-radius: 99px; }
+.flow-fill.in { background: var(--green); }
+.flow-fill.out { background: #f5a623; }
+.flow-fill.sur { background: var(--navy); }
+.split-bar { display: flex; height: 30px; border-radius: 10px; overflow: hidden; font-size: 11px; font-weight: 700; }
+.split-eq { background: var(--green); color: #fff; display: flex; align-items: center; justify-content: center; }
+.split-debt { background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; }
+.split-bar span { white-space: nowrap; overflow: hidden; }
+.fund-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 6px; }
+.fund-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.fund-top b { font-size: 14px; }
+.fund-amt { font-size: 19px; font-weight: 800; }
+.fund-amt .small { font-weight: 500; margin-left: 6px; }

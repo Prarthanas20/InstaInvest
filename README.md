@@ -29,6 +29,7 @@ high-trust onboarding, transparent pre-trade fees and bite-sized education at th
 | FIX routing & execution callbacks (OPEN → EXECUTED) | `POST /api/orders`, `GET /api/orders/[id]` |
 | Payment gateway webhooks (async ledger credit) | `/api/payments`, `/api/payments/webhook` |
 | WebSocket market data | Simulated 1.5s push feed in `lib/store.js` |
+| **Salary-hike detection & age-based recommendations** | Insights tab — bank statement analysis (`lib/advisor.js`), `POST /api/bank` (AA simulation), `POST /api/advisor` (hike %, surplus, age-tuned fund/stock SIPs) |
 
 ## Fee schedule (equity delivery, discount-broker style)
 
