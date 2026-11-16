@@ -1,0 +1,16 @@
+{
+  "name": "instainvest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "InstaInvest — mobile-first retail wealth & execution module with transparent pre-trade fees, contextual education and instant KYC.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
